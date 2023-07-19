@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { NgModule, importProvidersFrom } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 //components
 import { HeaderComponent } from './componet/header/header.component';
 import { TodoButTonDeletAllComponent } from './componet/todo-but-ton-delet-all/todo-but-ton-delet-all.component';
@@ -7,6 +8,8 @@ import { TodoInputAddItensComponent } from './componet/todo-input-add-itens/todo
 import { TodoListComponent } from './componet/todo-list/todo-list.component';
 //pages
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -19,7 +22,9 @@ import { HomeComponent } from './pages/home/home.component';
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
+
 export class HomeModule { }
